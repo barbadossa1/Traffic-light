@@ -1,0 +1,19 @@
+//
+//  ViewController.swift
+//  Traffic lights - homework-2-1-2
+//
+//  Created by Kuznetsov.Vadim on 13.04.2022.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+}
+
