@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,34 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="31E-Iw-EDy">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="31E-Iw-EDy">
                                 <rect key="frame" x="147" y="93" width="120" height="480"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1B-Ld-2qY">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="o1B-Ld-2qY" secondAttribute="height" multiplier="1:1" id="y5n-tS-5Tz"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9i-Ne-t7N">
                                         <rect key="frame" x="0.0" y="180" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="A9i-Ne-t7N" secondAttribute="height" multiplier="1:1" id="NKa-7F-KcY"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1k-8S-1HM">
                                         <rect key="frame" x="0.0" y="360" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="X1k-8S-1HM" secondAttribute="height" multiplier="1:1" id="6s4-8Y-GkR"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Ema-Hz-24s"/>
-                                    <constraint firstAttribute="height" constant="480" id="QyZ-HE-KiB"/>
-                                    <constraint firstItem="A9i-Ne-t7N" firstAttribute="top" secondItem="31E-Iw-EDy" secondAttribute="top" constant="180" id="az8-ya-v3A"/>
-                                    <constraint firstItem="A9i-Ne-t7N" firstAttribute="centerY" secondItem="31E-Iw-EDy" secondAttribute="centerY" id="bg1-q8-T02"/>
+                                    <constraint firstAttribute="width" secondItem="31E-Iw-EDy" secondAttribute="height" multiplier="1:4" id="5OV-WP-bdn"/>
+                                    <constraint firstAttribute="width" secondItem="31E-Iw-EDy" secondAttribute="height" multiplier="1:4" id="FrW-X2-phL"/>
+                                    <constraint firstAttribute="width" constant="120" id="P25-ee-KkW"/>
+                                    <constraint firstAttribute="height" constant="480" id="lWt-2O-R71"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bp-8t-zpU">
-                                <rect key="frame" x="130.5" y="673" width="153" height="60"/>
+                                <rect key="frame" x="130.5" y="722" width="153" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3Gx-l7-mhU"/>
                                     <constraint firstAttribute="width" constant="153" id="9Bw-F6-IkL"/>
+                                    <constraint firstAttribute="width" secondItem="1Bp-8t-zpU" secondAttribute="height" multiplier="51:20" id="xmT-mf-g5n"/>
                                 </constraints>
                                 <buttonConfiguration key="configuration" style="filled" title="Start">
                                     <backgroundConfiguration key="background">
@@ -51,22 +61,18 @@
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="23"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="switchLightButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="mcx-J5-KhF"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.069808337861978043" green="0.12459707105376265" blue="0.1647529987373737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="31E-Iw-EDy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5ow-dV-lvI"/>
-                            <constraint firstItem="31E-Iw-EDy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="6jJ-xa-g8Z"/>
-                            <constraint firstItem="1Bp-8t-zpU" firstAttribute="top" secondItem="31E-Iw-EDy" secondAttribute="bottom" constant="100" id="cIT-ey-c2L"/>
+                            <constraint firstItem="31E-Iw-EDy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ekp-po-k94"/>
                             <constraint firstItem="1Bp-8t-zpU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vOd-Ek-Nhz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Bp-8t-zpU" secondAttribute="bottom" constant="80" id="xnC-Le-tAG"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonSwitcher" destination="1Bp-8t-zpU" id="b1e-VL-pfW"/>
+                        <outlet property="btnSwitcher" destination="1Bp-8t-zpU" id="B8R-2d-lC4"/>
                         <outlet property="greenLightCircle" destination="X1k-8S-1HM" id="HR3-si-42M"/>
                         <outlet property="redLightCircle" destination="o1B-Ld-2qY" id="Igi-3e-aCf"/>
                         <outlet property="yellowLightCircle" destination="A9i-Ne-t7N" id="yhp-8v-8wB"/>
