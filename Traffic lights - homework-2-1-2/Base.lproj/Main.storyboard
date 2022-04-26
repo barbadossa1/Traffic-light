@@ -63,7 +63,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.069808337861978043" green="0.12459707105376265" blue="0.1647529987373737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.020256497546290105" green="0.04560370187779314" blue="0.10318724642094879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="31E-Iw-EDy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ekp-po-k94"/>
                             <constraint firstItem="31E-Iw-EDy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="usC-Ul-iPe"/>

@@ -29,19 +29,19 @@ class ViewController: UIViewController {
         redLightCircle.alpha = lightOn
         yellowLightCircle.alpha = lightOff
         greenLightCircle.alpha = lightOff
-        
     }
     
     @IBAction func switchTheLights(){
-        switch CGFloat(1) {
+        switch currentLight {
         case redLightCircle.alpha:
             redLightCircle.alpha = lightOff
-            yellowLightCircle.alpha = lightOn
+            currentLight = yellowLightCircle.alpha
         case yellowLightCircle.alpha:
             yellowLightCircle.alpha = lightOff
             greenLightCircle.alpha = lightOn
         default:
-            redLightCircle.alpha = lightOn
+            currentLight = redLightCircle.alpha
+            btnSwitcher.setTitle("Next", for: .normal)
         }
     }
     
