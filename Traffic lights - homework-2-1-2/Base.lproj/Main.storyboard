@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="31E-Iw-EDy">
-                                <rect key="frame" x="147" y="93" width="120" height="480"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="31E-Iw-EDy">
+                                <rect key="frame" x="147" y="84" width="120" height="480"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1B-Ld-2qY">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
@@ -43,13 +43,12 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="31E-Iw-EDy" secondAttribute="height" multiplier="1:4" id="5OV-WP-bdn"/>
-                                    <constraint firstAttribute="width" secondItem="31E-Iw-EDy" secondAttribute="height" multiplier="1:4" id="FrW-X2-phL"/>
                                     <constraint firstAttribute="width" constant="120" id="P25-ee-KkW"/>
                                     <constraint firstAttribute="height" constant="480" id="lWt-2O-R71"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bp-8t-zpU">
-                                <rect key="frame" x="130.5" y="722" width="153" height="60"/>
+                                <rect key="frame" x="130.5" y="742" width="153" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3Gx-l7-mhU"/>
                                     <constraint firstAttribute="width" constant="153" id="9Bw-F6-IkL"/>
@@ -67,8 +66,9 @@
                         <color key="backgroundColor" red="0.069808337861978043" green="0.12459707105376265" blue="0.1647529987373737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="31E-Iw-EDy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ekp-po-k94"/>
+                            <constraint firstItem="31E-Iw-EDy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="usC-Ul-iPe"/>
                             <constraint firstItem="1Bp-8t-zpU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vOd-Ek-Nhz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Bp-8t-zpU" secondAttribute="bottom" constant="80" id="xnC-Le-tAG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Bp-8t-zpU" secondAttribute="bottom" constant="60" id="xnC-Le-tAG"/>
                         </constraints>
                     </view>
                     <connections>

@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     
     private let lightOn: CGFloat = 1
     private let lightOff: CGFloat = 0.3
-    private var someNumber: CGFloat = 1
     
+    private var currentLight: CGFloat = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,29 +26,22 @@ class ViewController: UIViewController {
         yellowLightCircle.layer.cornerRadius = yellowLightCircle.frame.size.width/2
         greenLightCircle.layer.cornerRadius = greenLightCircle.frame.size.width/2
         
-        redLightCircle.alpha = lightOff
+        redLightCircle.alpha = lightOn
         yellowLightCircle.alpha = lightOff
         greenLightCircle.alpha = lightOff
         
     }
     
-    @IBAction func switchingTheLight() {
-        switch someNumber {
+    @IBAction func switchTheLights(){
+        switch CGFloat(1) {
         case redLightCircle.alpha:
             redLightCircle.alpha = lightOff
             yellowLightCircle.alpha = lightOn
-        
         case yellowLightCircle.alpha:
             yellowLightCircle.alpha = lightOff
             greenLightCircle.alpha = lightOn
-            
-        case greenLightCircle.alpha:
-            greenLightCircle.alpha = lightOff
-            redLightCircle.alpha = lightOn
-            
         default:
             redLightCircle.alpha = lightOn
-            btnSwitcher.setTitle("NEXT", for: .normal)
         }
     }
     
