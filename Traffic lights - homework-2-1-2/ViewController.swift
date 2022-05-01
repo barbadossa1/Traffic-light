@@ -13,13 +13,14 @@ enum CurrentLight {
     case red, yellow, green
 }
 
-class ViewController: UIViewController {    
+class ViewController: UIViewController {
     
     @IBOutlet var redLightCircle: UIView!
     @IBOutlet var yellowLightCircle: UIView!
     @IBOutlet var greenLightCircle: UIView!
     
-    @IBOutlet weak var btnSwitcher: UIButton!
+    @IBOutlet var lightSwitcherBtn: UIButton!
+    
     
     // setting the contrast of the traffic light colors
     
@@ -46,8 +47,8 @@ class ViewController: UIViewController {
     // set the rules for button and lights in function
     
     @IBAction func switchTheLights(){
-        if btnSwitcher.currentTitle == "Start"{
-            btnSwitcher.setTitle("Next", for: .normal)
+        if lightSwitcherBtn.currentTitle == "Start"{
+            lightSwitcherBtn.setTitle("Next", for: .normal)
         }
         switch currentLight {
         case .red:
@@ -67,6 +68,5 @@ class ViewController: UIViewController {
             currentLight = .red
         }
     }
-    
 }
 

@@ -74,6 +74,7 @@
                     <connections>
                         <outlet property="btnSwitcher" destination="1Bp-8t-zpU" id="B8R-2d-lC4"/>
                         <outlet property="greenLightCircle" destination="X1k-8S-1HM" id="HR3-si-42M"/>
+                        <outlet property="lightSwitcherBtn" destination="1Bp-8t-zpU" id="1xU-sg-9U8"/>
                         <outlet property="redLightCircle" destination="o1B-Ld-2qY" id="Igi-3e-aCf"/>
                         <outlet property="yellowLightCircle" destination="A9i-Ne-t7N" id="yhp-8v-8wB"/>
                     </connections>
