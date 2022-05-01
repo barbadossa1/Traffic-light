@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet var yellowLightCircle: UIView!
     @IBOutlet var greenLightCircle: UIView!
     
-    @IBOutlet weak var btnSwitcher: UIButton!
+    @IBOutlet var btnSwitcher: UIButton!
     
     // setting the contrast of the traffic light colors
     

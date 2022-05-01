@@ -60,6 +60,9 @@
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="23"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="switchTheLights" destination="BYZ-38-t0r" eventType="touchUpInside" id="jLB-Rk-tId"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -72,9 +75,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnSwitcher" destination="1Bp-8t-zpU" id="B8R-2d-lC4"/>
+                        <outlet property="btnSwitcher" destination="1Bp-8t-zpU" id="Klm-wq-sij"/>
                         <outlet property="greenLightCircle" destination="X1k-8S-1HM" id="HR3-si-42M"/>
                         <outlet property="redLightCircle" destination="o1B-Ld-2qY" id="Igi-3e-aCf"/>
+                        <outlet property="switchLightsBtn" destination="1Bp-8t-zpU" id="ArD-vr-4Vg"/>
                         <outlet property="yellowLightCircle" destination="A9i-Ne-t7N" id="yhp-8v-8wB"/>
                     </connections>
                 </viewController>
