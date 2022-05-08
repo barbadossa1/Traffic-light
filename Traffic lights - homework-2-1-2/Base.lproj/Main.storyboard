@@ -62,7 +62,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="switchTheLights" destination="BYZ-38-t0r" eventType="touchUpInside" id="jLB-Rk-tId"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="GvG-rn-827"/>
                                 </connections>
                             </button>
                         </subviews>

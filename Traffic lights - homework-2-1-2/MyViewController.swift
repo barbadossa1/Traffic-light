@@ -53,12 +53,18 @@ class MyViewController: UIViewController {
         switch currentLight {
         case .red:
             redLightCircle.alpha = lightOn
+            yellowLightCircle.alpha = lightOff
+            greenLightCircle.alpha = lightOff
             currentLight = .yellow
         case .yellow:
             yellowLightCircle.alpha = lightOn
+            greenLightCircle.alpha = lightOff
+            redLightCircle.alpha = lightOff
             currentLight = .green
         case .green:
             greenLightCircle.alpha = lightOn
+            redLightCircle.alpha = lightOff
+            yellowLightCircle.alpha = lightOff
             currentLight = .red
         }
     }
