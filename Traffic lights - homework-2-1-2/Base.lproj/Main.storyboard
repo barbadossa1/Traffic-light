@@ -62,6 +62,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="switchTheLights" destination="BYZ-38-t0r" eventType="touchUpInside" id="jLB-Rk-tId"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="GvG-rn-827"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -75,7 +76,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnSwitcher" destination="1Bp-8t-zpU" id="Klm-wq-sij"/>
+                        <outlet property="btnSwitcher" destination="1Bp-8t-zpU" id="dq7-zC-ovf"/>
                         <outlet property="greenLightCircle" destination="X1k-8S-1HM" id="HR3-si-42M"/>
                         <outlet property="redLightCircle" destination="o1B-Ld-2qY" id="Igi-3e-aCf"/>
                         <outlet property="yellowLightCircle" destination="A9i-Ne-t7N" id="yhp-8v-8wB"/>
