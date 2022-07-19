@@ -19,8 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet var yellowLightCircle: UIView!
     @IBOutlet var greenLightCircle: UIView!
     
-    @IBOutlet var lightSwitcherBtn: UIButton!
-    
+    @IBOutlet var switchBtn: UIButton!
     
     // setting the contrast of the traffic light colors
     
@@ -47,8 +46,8 @@ class ViewController: UIViewController {
     // set the rules for button and lights in function
     
     @IBAction func switchTheLights(){
-        if lightSwitcherBtn.currentTitle == "Start"{
-            lightSwitcherBtn.setTitle("Next", for: .normal)
+        if switchBtn.currentTitle == "Start"{
+            switchBtn.setTitle("Next", for: .normal)
         }
         switch currentLight {
         case .red:
