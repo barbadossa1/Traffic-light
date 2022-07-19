@@ -1,86 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--My View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Traffic_lights___homework_2_1_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MyViewController" customModule="Traffic_lights___homework_2_1_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="F7l-Me-e4I">
-                                <rect key="frame" x="127" y="199" width="160" height="498.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="31E-Iw-EDy">
+                                <rect key="frame" x="147" y="84" width="120" height="480"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6X-2r-fpH">
-                                        <rect key="frame" x="20" y="0.0" width="120" height="120"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1B-Ld-2qY">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="VxW-uz-KIh"/>
-                                            <constraint firstAttribute="width" secondItem="n6X-2r-fpH" secondAttribute="height" multiplier="1:1" id="sjT-LH-Zjq"/>
-                                            <constraint firstAttribute="height" constant="120" id="t1I-1I-piW"/>
+                                            <constraint firstAttribute="width" secondItem="o1B-Ld-2qY" secondAttribute="height" multiplier="1:1" id="y5n-tS-5Tz"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lx6-bp-XaX">
-                                        <rect key="frame" x="20" y="148" width="120" height="120"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9i-Ne-t7N">
+                                        <rect key="frame" x="0.0" y="180" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="lx6-bp-XaX" secondAttribute="height" multiplier="1:1" id="344-P4-4Zp"/>
-                                            <constraint firstAttribute="width" constant="120" id="E98-Pi-rbf"/>
-                                            <constraint firstAttribute="height" constant="120" id="tmk-Np-C3A"/>
+                                            <constraint firstAttribute="width" secondItem="A9i-Ne-t7N" secondAttribute="height" multiplier="1:1" id="NKa-7F-KcY"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8C-UB-ylQ">
-                                        <rect key="frame" x="20" y="296" width="120" height="120"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1k-8S-1HM">
+                                        <rect key="frame" x="0.0" y="360" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="aDj-Fx-MS6"/>
-                                            <constraint firstAttribute="height" constant="120" id="sCD-NB-NX2"/>
-                                            <constraint firstAttribute="width" secondItem="X8C-UB-ylQ" secondAttribute="height" multiplier="1:1" id="xlY-39-Evk"/>
+                                            <constraint firstAttribute="width" secondItem="X1k-8S-1HM" secondAttribute="height" multiplier="1:1" id="6s4-8Y-GkR"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9N-Mp-JsN">
-                                        <rect key="frame" x="0.0" y="444" width="160" height="54.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="160" id="KzZ-4Y-ACg"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Push to start" buttonSize="large">
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
-                                            <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="switchTheLights" destination="BYZ-38-t0r" eventType="touchUpInside" id="27k-5F-Zu5"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="31E-Iw-EDy" secondAttribute="height" multiplier="1:4" id="5OV-WP-bdn"/>
+                                    <constraint firstAttribute="width" constant="120" id="P25-ee-KkW"/>
+                                    <constraint firstAttribute="height" constant="480" id="lWt-2O-R71"/>
+                                </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bp-8t-zpU">
+                                <rect key="frame" x="130.5" y="742" width="153" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3Gx-l7-mhU"/>
+                                    <constraint firstAttribute="width" constant="153" id="9Bw-F6-IkL"/>
+                                    <constraint firstAttribute="width" secondItem="1Bp-8t-zpU" secondAttribute="height" multiplier="51:20" id="xmT-mf-g5n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchTheLights" destination="BYZ-38-t0r" eventType="touchUpInside" id="jLB-Rk-tId"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.020256497546290105" green="0.04560370187779314" blue="0.10318724642094879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="F7l-Me-e4I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ZO-Ha-BSh"/>
-                            <constraint firstItem="F7l-Me-e4I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QBG-ac-nEE"/>
+                            <constraint firstItem="31E-Iw-EDy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ekp-po-k94"/>
+                            <constraint firstItem="31E-Iw-EDy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="usC-Ul-iPe"/>
+                            <constraint firstItem="1Bp-8t-zpU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vOd-Ek-Nhz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Bp-8t-zpU" secondAttribute="bottom" constant="60" id="xnC-Le-tAG"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greenLightCircle" destination="X8C-UB-ylQ" id="lh6-iw-xsJ"/>
-                        <outlet property="redLightCircle" destination="n6X-2r-fpH" id="Iv9-Zs-nV6"/>
-                        <outlet property="switchBtn" destination="i9N-Mp-JsN" id="92k-4o-hri"/>
-                        <outlet property="yellowLightCircle" destination="lx6-bp-XaX" id="rNt-kb-Og0"/>
+                        <outlet property="btnSwitcher" destination="1Bp-8t-zpU" id="dq7-zC-ovf"/>
+                        <outlet property="greenLightCircle" destination="X1k-8S-1HM" id="HR3-si-42M"/>
+                        <outlet property="redLightCircle" destination="o1B-Ld-2qY" id="Igi-3e-aCf"/>
+                        <outlet property="yellowLightCircle" destination="A9i-Ne-t7N" id="yhp-8v-8wB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.399999999999999" y="65.217391304347828"/>
+            <point key="canvasLocation" x="18.840579710144929" y="65.625"/>
         </scene>
     </scenes>
     <resources>
